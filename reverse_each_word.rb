@@ -1,6 +1,10 @@
 def reverse_each_word(string)
+  string = string.split('')
+  reversed_string = []
   
-  array = sentence.split(" ")
-  sentence.collect do |sentence|
-  sentence.split(',').reverse
+  string.collect do |sentence|
+    reversed_string.unshift(sentence)
+  end
+
+return reversed_string.join('')
 end
